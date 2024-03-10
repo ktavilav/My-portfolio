@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.jsx
 
-function App() {
+import React, { useEffect } from 'react';
+import Header from './components/Header';
+import Navbar from './components/Navbar';
+import AboutMe from './components/AboutMe';
+import Resume from './components/Resume'
+import Stats from './components/Stats'
+import Services from './components/Services'
+import Price from './components/Price'
+import Chronometer from './components/Chronometer';
+import Skills from './components/Skills'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+import '../src/public_html/assets/vendors/themify-icons/css/themify-icons.css';
+import '../src/public_html/assets/css/johndoe.css';
+
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Navbar />
+      <AboutMe />
+      <Resume />
+      <Services />
+      <Price />
+      <Chronometer/>
+      <Skills/>
+      <Contact />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
